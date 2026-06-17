@@ -5,7 +5,7 @@ Static interactive page for the GameCodex project.
 Open locally:
 
 ```text
-G:\GameCodex\site\index.html
+site/index.html
 ```
 
 The page is intentionally static:

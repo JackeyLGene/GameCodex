@@ -515,8 +515,6 @@ function setupDrift() {
 }
 
 function setupAdoption() {
-  const tabs = $("#horizon-tabs");
-  tabs.innerHTML = "";
   renderAdoption();
 }
 
