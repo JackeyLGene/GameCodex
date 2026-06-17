@@ -24,7 +24,7 @@ fingerprints, opponent mirrors, and a selectable structural matchup explorer.
 
 | Purpose | File |
 |---|---|
-| Current manuscript | [`docs/MANUSCRIPT_v8_PNAS.md`](docs/MANUSCRIPT_v8_PNAS.md) |
+| Technical note | [`docs/TECHNICAL_NOTE.md`](docs/TECHNICAL_NOTE.md) |
 | Repository map | [`docs/INDEX.md`](docs/INDEX.md) |
 | Package status | [`docs/PACKAGE_STATUS_2026-06-15.md`](docs/PACKAGE_STATUS_2026-06-15.md) |
 | Reproduction notes | [`REPRODUCE.md`](REPRODUCE.md) |
@@ -75,12 +75,12 @@ choice changed.
 ```text
 GameCodex/
   docs/
-    MANUSCRIPT_v8_PNAS.md       current manuscript
+    TECHNICAL_NOTE.md           current technical note
     INDEX.md                    document map
     notes/                      research plans and dialogue
     archive/                    older drafts and audits
   results/
-    figures/                    manuscript and SI figures
+    figures/                    technical-note and SI figures
     phase*/                     derived aggregate outputs
     PHASE*_*.md                 phase summaries
   scripts/

@@ -2,10 +2,9 @@
 
 This index is the navigation layer for the GameCodex paper package.
 
-## Current Paper
+## Current Note
 
-- [`GameCodex_Manuscript_v1.pdf`](GameCodex_Manuscript_v1.pdf) - repository PDF release for sharing.
-- [`MANUSCRIPT_v8_PNAS.md`](MANUSCRIPT_v8_PNAS.md) - current manuscript and SI source text.
+- [`TECHNICAL_NOTE.md`](TECHNICAL_NOTE.md) - current technical note and SI source text.
 
 ## Reproduction And Results
 
@@ -46,4 +45,4 @@ This index is the navigation layer for the GameCodex paper package.
 ## Archive
 
 Older manuscript drafts and review reports are in [`archive/`](archive/). They
-are retained for provenance, not as the current paper entry point.
+are retained for provenance, not as the current public entry point.

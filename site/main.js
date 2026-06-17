@@ -818,7 +818,7 @@ function renderRegional() {
   $("#signature-chart").innerHTML = `
     <div class="regional-footnote">
       Measured with five SHP rhythm features. The braid uses phase-aggregated country vectors;
-      the manuscript reports separate bootstrap checks.
+      the technical note reports separate bootstrap checks.
     </div>
   `;
 
