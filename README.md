@@ -10,16 +10,14 @@ accelerated how opening patterns are discovered, transmitted, and stabilized.
 
 中文一句话：AI 没有重写围棋棋步结构，但重写了围棋 Codex 被发现、传播和稳定的速度。
 
-## Interactive Pages
+## Interactive Page
 
-The public interactive page lives at [`site/index.html`](site/index.html). The
-repository root also includes a static redirect to `/site/` for GitHub Pages. It
+The public interactive page lives at [`site/index.html`](site/index.html). It
 is a black-and-white interactive page: SHP board lens, Lee/Ke policy trace,
 historical drift envelope, adoption-speed chart, and regional Codex flow.
 
-The football prototype lives at [`football/index.html`](football/index.html).
-It uses the same SHP logic on StatsBomb World Cup event data: team
-fingerprints, opponent mirrors, and a selectable structural matchup explorer.
+For methodology details and manuscript status, see the
+[technical note](docs/TECHNICAL_NOTE.md).
 
 ## Start Here
 
