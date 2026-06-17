@@ -12,8 +12,9 @@ accelerated how opening patterns are discovered, transmitted, and stabilized.
 
 ## Interactive Pages
 
-The public interactive page lives at [`site/index.html`](site/index.html). It is a static
-black-and-white interactive page: SHP board lens, Lee/Ke policy trace,
+The public interactive page lives at [`site/index.html`](site/index.html). The
+repository root also includes a static redirect to `/site/` for GitHub Pages. It
+is a black-and-white interactive page: SHP board lens, Lee/Ke policy trace,
 historical drift envelope, adoption-speed chart, and regional Codex flow.
 
 The football prototype lives at [`football/index.html`](football/index.html).
