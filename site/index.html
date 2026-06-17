@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How AI Changed Go: A Decade Review</title>
+    <meta
+      name="description"
+      content="An interactive GameCodex decade review of AlphaGo, SHP move structure, adoption speed, long Go history, and regional Codex flow."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260616-launch-hardening-2">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="GameCodex home">
+        <span class="stone stone-black"></span>
+        <span>GameCodex</span>
+        <span class="stone stone-white"></span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#trace">AI Trace</a>
+        <a href="#history">History</a>
+        <a href="#circulation">Circulation</a>
+        <a href="#regional">Regional</a>
+        <a href="#caveats">Caveats</a>
+        <a href="#lens">Method</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Interactive decade review</p>
+          <h1>How AI Changed Go: A Decade Review</h1>
+          <p class="thesis">
+            Ten years after AlphaGo, Go did not simply become "AI Go".
+            The record shows a new way of learning: moves query an oracle,
+            patterns spread faster, and regional streams reorganize.
+          </p>
+          <div class="metric-row" aria-label="Core results">
+            <div class="metric">
+              <span class="metric-value">400y</span>
+              <span class="metric-label">1600s to 2020s</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">95,001</span>
+              <span class="metric-label">recorded CWI games</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">3.32M</span>
+              <span class="metric-label">moves structurally encoded</span>
+            </div>
+          </div>
+          <p class="plain-note">
+            The page uses a structural lens: each move is read as
+            <strong>chroma</strong>, where it falls in the game, crossed with
+            <strong>rhythm</strong>, how it answers the board.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band split" id="trace">
+        <div class="section-copy">
+          <p class="eyebrow">Two human encounters with the oracle</p>
+          <h2>AI alignment is not the same thing as winning.</h2>
+          <p>
+            Lee Sedol in 2016 and Ke Jie in 2017 show two different modes of
+            alignment. One enters the oracle style through a mid-game transition;
+            the other is already aligned from the opening and still loses.
+          </p>
+        </div>
+        <section class="tool-panel trace-panel" aria-labelledby="trace-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">KataGo policy trace</p>
+              <h3 id="trace-title">How the oracle reads a human move</h3>
+            </div>
+            <button class="text-button" id="play-trace" type="button">Play</button>
+          </div>
+          <div class="toggle-row" id="game-tabs" role="tablist" aria-label="Select game"></div>
+          <p class="policy-primer">
+            <strong>Policy rank</strong>: 1 is KataGo's first choice, lower is more AI-aligned,
+            and 20+ means outside the top-20 shortlist.
+          </p>
+          <div id="trace-chart" class="chart trace-chart" role="img" aria-label="Policy-rank chart"></div>
+          <div id="winrate-chart" class="mini-chart" role="img" aria-label="Human win-rate chart"></div>
+          <div class="trace-controls">
+            <div class="trace-slider-wrap">
+              <div class="trace-slider-markers" id="trace-slider-markers" aria-hidden="true"></div>
+              <input id="trace-slider" type="range" min="0" max="1" value="0">
+            </div>
+            <div class="trace-readout">
+              <strong id="trace-move">Move -</strong>
+              <span id="trace-rank">rank -</span>
+              <span id="trace-winrate">win-rate -</span>
+            </div>
+          </div>
+          <p class="small-note" id="trace-note"></p>
+          <p class="trace-quote" id="trace-quote" hidden></p>
+        </section>
+      </section>
+
+      <section class="section-band split reverse" id="history">
+        <section class="tool-panel" aria-labelledby="history-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">400-year baseline</p>
+              <h3 id="history-title">The AI decade in a longer timeline</h3>
+            </div>
+          </div>
+          <div id="drift-chart" class="chart bar-chart" role="img" aria-label="Decade drift bars"></div>
+          <div class="detail-strip" id="drift-detail"></div>
+        </section>
+        <div class="section-copy">
+          <p class="eyebrow">Decade read 1</p>
+          <h2>The AI decade is a big recent move on a 400-year board.</h2>
+          <p>
+            The 2010s to 2020s shift is a real rhythm movement in recorded Go.
+            The long timeline keeps the story honest: AI is a major last-decade
+            event, while earlier recording and circulation regimes also moved
+            the archive in measurable ways.
+          </p>
+          <div class="fact-stack">
+            <div><strong>AI decade</strong><span>0.0130</span></div>
+            <div><strong>Pre-2016 decade avg</strong><span>0.0146</span></div>
+            <div><strong>Institutional comparator</strong><span>0.0342</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band split" id="circulation">
+        <div class="section-copy">
+          <p class="eyebrow">Decade read 2</p>
+          <h2>AI made opening patterns travel faster.</h2>
+          <p>
+            Here a pattern is deliberately strict: the exact first 15 moves of
+            a game, reused across years. That turns "influence" into something
+            visible: first appearance, multi-player adoption, peak reuse, and
+            survival in the archive.
+          </p>
+          <div class="fact-stack">
+            <div><strong>Pattern unit</strong><span>exact 15 moves</span></div>
+            <div><strong>Bootstrap ratio</strong><span>4.2x [2.9, 5.9]</span></div>
+            <div><strong>Observed lag</strong><span>6.3y to 1.5y</span></div>
+          </div>
+        </div>
+        <section class="tool-panel" aria-labelledby="adoption-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Pattern adoption</p>
+              <h3 id="adoption-title">Opening fingerprints, two speeds</h3>
+            </div>
+          </div>
+          <div class="toggle-row" id="horizon-tabs" role="group" aria-label="Select adoption horizon"></div>
+          <div id="adoption-chart" class="chart bar-chart" role="img" aria-label="Pattern adoption by era"></div>
+        </section>
+      </section>
+
+      <section class="section-band split reverse" id="regional">
+        <section class="tool-panel" aria-labelledby="regional-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Regional event streams</p>
+              <h3 id="regional-title">Three style streams through the AI decade</h3>
+            </div>
+          </div>
+          <div id="regional-chart" class="chart bar-chart" role="img" aria-label="Regional distance by AI phase"></div>
+          <div id="signature-chart" class="signature-grid"></div>
+        </section>
+        <div class="section-copy">
+          <p class="eyebrow">Decade read 3</p>
+          <h2>Three style streams split, braid, and converge.</h2>
+          <p>
+            Before AlphaGo, the recorded Japan, Korea, and China streams sit
+            apart. AlphaGo pulls them toward one public reference. Public
+            engines then spread into local practice, and the streams separate
+            again before settling into a closer oracle-era configuration.
+          </p>
+          <p>
+            The braid is the story: convergence is not permanent flattening.
+            It is a sequence of shared shock, local absorption, and routine
+            reference.
+            Click each phase to reveal the readings behind the drawing.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band codex-band" id="codex">
+        <div class="section-copy wide-copy">
+          <p class="eyebrow">Codex operation</p>
+          <h2>AI turned Go knowledge into something players can query.</h2>
+          <p>
+            The important change is not that every player memorizes one AI move.
+            It is that the community gains an external reference: a way to test
+            candidate moves, reuse discoveries, and stabilize new habits faster.
+            The archive becomes less like a rulebook and more like shared memory.
+          </p>
+        </div>
+        <div class="metric-row codex-metrics">
+          <div class="metric">
+            <span class="metric-value">New habits</span>
+            <span class="metric-label">AI-era moves sediment into reusable routines</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Faster spread</span>
+            <span class="metric-label">opening fingerprints circulate 4.2x faster</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">Stabilized streams</span>
+            <span class="metric-label">regional rhythm gap narrows from 0.0121 to 0.0065</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band caveat-band" id="caveats">
+        <div class="section-copy wide-copy">
+          <p class="eyebrow">What this is not</p>
+          <h2>A smaller claim is a stronger claim.</h2>
+        </div>
+        <div class="caveat-grid">
+          <article>
+            <h3>Not "AI did not matter"</h3>
+            <p>It mattered by changing how moves are evaluated, how fast patterns circulate, and how regional streams stabilize.</p>
+          </article>
+          <article>
+            <h3>Not a complete Go census</h3>
+            <p>The analysis is about recorded CWI games and explicitly treats archive composition as part of the object.</p>
+          </article>
+          <article>
+            <h3>Not national character</h3>
+            <p>Regional labels refer to event streams in the archive, not claims about players or cultures as essences.</p>
+          </article>
+          <article>
+            <h3>Not live engine analysis</h3>
+            <p>The page uses precomputed aggregates and sampled KataGo traces so it can run as a static page.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band method-band" id="lens">
+        <div class="section-copy wide-copy">
+          <p class="eyebrow">Optional method</p>
+          <h2>How the structural lens works.</h2>
+          <p>
+            Each move is encoded as when it appears in the game and how it
+            relates to the stones already on the board. The demo below makes
+            that encoding visible on real positions.
+          </p>
+        </div>
+        <div class="tool-panel board-tool" aria-labelledby="board-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Evaluation method</p>
+              <h2 id="board-title">Real positions, read as chroma x rhythm</h2>
+            </div>
+            <button class="text-button" id="reset-board" type="button">Reset</button>
+          </div>
+          <div class="board-layout">
+            <canvas id="go-board" width="720" height="720" aria-label="Go board rhythm demo"></canvas>
+            <div class="readout" aria-live="polite">
+              <div class="stage-block">
+                <div class="slider-label">
+                  Game stage
+                  <span id="stage-label">Opening</span>
+                </div>
+                <div class="toggle-row" id="stage-tabs" role="tablist" aria-label="Select game stage"></div>
+                <p class="stage-source" id="stage-source"></p>
+              </div>
+              <div class="candidate-block">
+                <div class="slider-label">
+                  Candidate move
+                  <span id="candidate-label">-</span>
+                </div>
+                <div id="candidate-list" class="candidate-list"></div>
+              </div>
+              <dl class="feature-list">
+                <div>
+                  <dt>Selected move</dt>
+                  <dd id="feat-move">-</dd>
+                </div>
+                <div>
+                  <dt>Nearest stone</dt>
+                  <dd id="feat-distance">-</dd>
+                </div>
+                <div>
+                  <dt>Own neighbors</dt>
+                  <dd id="feat-own">-</dd>
+                </div>
+                <div>
+                  <dt>Opponent neighbors</dt>
+                  <dd id="feat-opp">-</dd>
+                </div>
+                <div>
+                  <dt>Open corner</dt>
+                  <dd id="feat-corner">-</dd>
+                </div>
+                <div>
+                  <dt>Policy tag</dt>
+                  <dd id="feat-ai-gap">-</dd>
+                </div>
+                <div>
+                  <dt>Rhythm label</dt>
+                  <dd id="feat-label">-</dd>
+                </div>
+              </dl>
+              <p class="small-note">
+                The board positions are drawn from real SGF records. Trace-backed
+                moves use KataGo ranks; the other labels are policy-style probes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>GameCodex</strong>
+        <span>Static interactive analysis of AI-era Go.</span>
+      </div>
+      <div class="footer-links">
+        <a href="../README.md">Repo</a>
+        <a href="../docs/GameCodex_Manuscript_v1.pdf">Manuscript</a>
+        <a href="../REPRODUCE.md">Reproduce</a>
+      </div>
+    </footer>
+
+    <script src="data/app-data.js?v=20260616-launch-hardening-2"></script>
+    <script src="main.js?v=20260616-launch-hardening-2"></script>
+  </body>
+</html>

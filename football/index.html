@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fingerprints on the World Cup</title>
+    <meta
+      name="description"
+      content="A structural analysis of how World Cup teams shape the game using SHP football event fingerprints."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260616-football-t">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Fingerprints on the World Cup home">
+        <span class="ball-mark" aria-hidden="true"></span>
+        <span>GameCodex Football</span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#method">Method</a>
+        <a href="#fingerprints">Fingerprints</a>
+        <a href="#anchors">Anchors</a>
+        <a href="#mirror">Mirror</a>
+        <a href="#matchups">Matchups</a>
+        <a href="#notes">Notes</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Post-tournament structural lens</p>
+          <h1>Fingerprints on the World Cup</h1>
+          <p class="subtitle">A structural analysis of how teams shape the game</p>
+          <p class="thesis">
+            Best used after the matches, when event data is complete. We read
+            game shape: where a team tended to play, how often it pressed, and
+            what kind of match it created for the opponent.
+          </p>
+          <div class="hero-summary">
+            <div class="hero-pitch" aria-hidden="true">
+              <div class="pitch-lines"></div>
+              <div class="hero-dot dot-a"></div>
+              <div class="hero-dot dot-b"></div>
+              <div class="hero-dot dot-c"></div>
+              <div class="hero-dot dot-d"></div>
+            </div>
+            <div class="metric-grid" aria-label="Dataset summary">
+              <article>
+                <strong id="metric-matches">128</strong>
+                <span>World Cup matches</span>
+              </article>
+              <article>
+                <strong id="metric-events">456K</strong>
+                <span>located events</span>
+              </article>
+              <article>
+                <strong id="metric-teams">32</strong>
+                <span>team fingerprints</span>
+              </article>
+              <article>
+                <strong id="metric-matchups">8</strong>
+                <span>featured matchups</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="method">
+        <div class="section-copy">
+          <p class="eyebrow">How we read a match</p>
+          <h2>When in the match. Where on the pitch.</h2>
+          <p>
+            The method starts with one game: Argentina vs France, the 2022
+            final. The simple read is: when does the play happen, and where is
+            the ball or action on the pitch? Over 120 minutes, those points
+            become a game shape.
+          </p>
+          <p class="plain-note story-line">
+            <strong>Goals are punctures.</strong> The score records the break;
+            the shape records the pressure.
+          </p>
+          <div class="play-row" aria-label="Final timeline controls">
+            <button class="play-button" id="method-play" type="button">Play</button>
+            <input id="method-slider" type="range" min="0" max="11" value="0" step="1" aria-label="Match time window">
+            <span class="time-chip" id="method-window">0-10 min</span>
+          </div>
+          <div class="timeline-row" id="method-tabs" aria-label="Final timeline"></div>
+          <div class="readout-grid" id="method-readouts"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Argentina vs France</p>
+              <h3 id="method-title">2022 final event shape</h3>
+            </div>
+            <span class="badge" id="method-phase">0-45 min</span>
+          </div>
+          <svg class="pitch-svg" id="method-pitch" viewBox="0 0 120 80" role="img" aria-labelledby="method-title"></svg>
+          <p class="caption">
+            Faded dots show event volume. Colored dots mark Messi, Mbappe, and
+            Di Maria touches. Goal windows are marked on the timeline.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="fingerprints">
+        <div class="section-copy narrow">
+          <p class="eyebrow">What fans recognize</p>
+          <h2>Match structure already separates team styles.</h2>
+          <p>
+            Some teams squeeze the match high. Some camp on the ball. Some sit
+            lower and bite. The map turns those familiar football feelings into
+            a simple style field.
+          </p>
+        </div>
+        <div class="workspace two-column">
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Style field</p>
+                <h3>Where teams live in a match</h3>
+              </div>
+              <span class="badge">32 teams</span>
+            </div>
+            <svg class="scatter-svg" id="team-map" viewBox="0 0 720 420" role="img" aria-label="Team style field"></svg>
+            <div class="style-map-guide" aria-label="Style field axes">
+              <article>
+                <strong>Field height</strong>
+                <span>average <b id="field-height-avg">0.479</b></span>
+                <p>Left means a team usually lives deeper; right means it spends more of the match higher upfield.</p>
+              </article>
+              <article>
+                <strong>Bite</strong>
+                <span>average <b id="bite-avg">7.6%</b></span>
+                <p>Up means more pressure events in the stream; down means the match feels calmer around the ball.</p>
+              </article>
+            </div>
+            <div class="zone-guide" aria-label="Style field regions">
+              <article>
+                <span class="flag-chip flag-mar" aria-hidden="true"></span>
+                <strong>Counterpunch</strong>
+                <p>lower field, sharp bite</p>
+              </article>
+              <article>
+                <span class="flag-chip flag-ksa" aria-hidden="true"></span>
+                <strong>Front-foot hunt</strong>
+                <p>high field, high bite</p>
+              </article>
+              <article>
+                <span class="flag-chip flag-crc" aria-hidden="true"></span>
+                <strong>Deep absorb</strong>
+                <p>lower field, lower bite</p>
+              </article>
+              <article>
+                <span class="flag-chip flag-esp" aria-hidden="true"></span>
+                <strong>Territory control</strong>
+                <p>high field, calmer bite</p>
+              </article>
+            </div>
+          </div>
+          <aside class="detail-panel" id="team-detail" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="section compact-section" id="anchors">
+        <div class="thin-read-panel">
+          <div class="thin-read-copy">
+            <p class="eyebrow">Sideline note</p>
+            <h2>Use World Cup drift as a scene, not a verdict.</h2>
+            <p>
+              A team can look different from one World Cup to the next. With
+              only a few matches per team, and the next tournament resetting
+              the cast, the page treats that as a story cue, not a forecast.
+            </p>
+          </div>
+          <div class="thin-read-stats" id="anchor-bars"></div>
+          <p class="thin-read-example" id="anchor-examples"></p>
+        </div>
+      </section>
+
+      <section class="section split reverse" id="mirror">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Opponent gravity</p>
+              <h3>Some teams change the game you are allowed to play.</h3>
+            </div>
+            <select id="opponent-select" aria-label="Select opponent"></select>
+          </div>
+          <div class="mirror-axis" id="mirror-axis" aria-label="Opponent x-position shift"></div>
+          <div class="mirror-card" id="mirror-card"></div>
+        </div>
+        <div class="section-copy">
+          <p class="eyebrow">The counterintuitive part</p>
+          <h2>Your style is partly the opponent's fingerprint.</h2>
+          <p>
+            Costa Rica invite teams forward. Spain and Brazil push them back.
+            Uruguay barely changes no matter who is across the pitch. Germany
+            bends with the matchup. This is why a team's "style" is never fully
+            its own.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="matchups">
+        <div class="section-copy narrow">
+          <p class="eyebrow">Matchup explorer</p>
+          <h2>Pick two teams. Make a structural argument.</h2>
+          <p>
+            This is not a win model. It compares two recorded game shapes:
+            style distance, territory edge, pressure edge, control tendency,
+            and how readable the comparison is.
+          </p>
+        </div>
+        <div class="matchup-shell">
+          <div class="selector-panel">
+            <label>
+              Team A
+              <select id="team-a"></select>
+            </label>
+            <label>
+              Team B
+              <select id="team-b"></select>
+            </label>
+            <div class="featured-row" id="featured-matchups" aria-label="Featured matchups"></div>
+          </div>
+          <div class="panel matchup-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Shape comparison</p>
+                <h3 id="matchup-title">Morocco vs Portugal</h3>
+              </div>
+              <span class="badge" id="matchup-confidence">Read</span>
+            </div>
+            <div class="matchup-score" id="matchup-score"></div>
+            <div class="matchup-grid" id="matchup-grid"></div>
+            <svg class="duel-svg" id="duel-svg" viewBox="0 0 720 180" role="img" aria-label="Matchup territory and pressure comparison"></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section notes" id="notes">
+        <div class="section-copy narrow">
+          <p class="eyebrow">What this is</p>
+          <h2>A portable structural lens, not a football oracle.</h2>
+        </div>
+        <div class="note-grid">
+          <article>
+            <h3>Data</h3>
+            <p>
+              StatsBomb Open Data, 2018 and 2022 World Cups. The page is built
+              for complete event datasets after matches are played, not live
+              tournament tracking.
+            </p>
+          </article>
+          <article>
+            <h3>Method</h3>
+            <p>
+              Every event is encoded as time context plus pitch rhythm. Team
+              fingerprints are averages over those event coordinates.
+            </p>
+          </article>
+          <article>
+            <h3>Limits</h3>
+            <p>
+              No xG, no score prediction, no possession-chain model. Read
+              strength marks structural readability, not match outcome probability.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Fingerprints on the World Cup</strong>
+        <span>GameCodex SHP football prototype.</span>
+      </div>
+      <div class="footer-links">
+        <a href="DESIGN_PLAN.md">Design plan</a>
+        <a href="../README.md">GameCodex</a>
+        <a href="https://github.com/statsbomb/open-data">StatsBomb Open Data</a>
+      </div>
+    </footer>
+
+    <script src="data/football-data.js?v=20260616-football-t"></script>
+    <script src="main.js?v=20260616-football-t"></script>
+  </body>
+</html>

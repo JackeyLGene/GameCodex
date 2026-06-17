@@ -1,0 +1,144 @@
+game,move_number,policy_rank_zero_indexed,raw_katago_winrate,raw_winrate_perspective,human_perspective_winrate
+Lee Sedol vs AlphaGo Game 4,16,99,0.536,human,0.536
+Lee Sedol vs AlphaGo Game 4,18,4,0.523,human,0.523
+Lee Sedol vs AlphaGo Game 4,20,3,0.414,human,0.414
+Lee Sedol vs AlphaGo Game 4,22,2,0.387,human,0.387
+Lee Sedol vs AlphaGo Game 4,24,1,0.38,human,0.38
+Lee Sedol vs AlphaGo Game 4,26,3,0.378,human,0.378
+Lee Sedol vs AlphaGo Game 4,28,0,0.377,human,0.377
+Lee Sedol vs AlphaGo Game 4,30,1,0.376,human,0.376
+Lee Sedol vs AlphaGo Game 4,32,1,0.312,human,0.312
+Lee Sedol vs AlphaGo Game 4,34,1,0.292,human,0.292
+Lee Sedol vs AlphaGo Game 4,36,0,0.309,human,0.309
+Lee Sedol vs AlphaGo Game 4,38,0,0.332,human,0.332
+Lee Sedol vs AlphaGo Game 4,40,99,0.333,human,0.333
+Lee Sedol vs AlphaGo Game 4,42,2,0.248,human,0.248
+Lee Sedol vs AlphaGo Game 4,44,99,0.212,human,0.212
+Lee Sedol vs AlphaGo Game 4,46,99,0.136,human,0.136
+Lee Sedol vs AlphaGo Game 4,48,1,0.133,human,0.133
+Lee Sedol vs AlphaGo Game 4,50,1,0.136,human,0.136
+Lee Sedol vs AlphaGo Game 4,52,99,0.145,human,0.145
+Lee Sedol vs AlphaGo Game 4,54,0,0.133,human,0.133
+Lee Sedol vs AlphaGo Game 4,56,1,0.121,human,0.121
+Lee Sedol vs AlphaGo Game 4,58,0,0.1,human,0.1
+Lee Sedol vs AlphaGo Game 4,60,1,0.087,human,0.087
+Lee Sedol vs AlphaGo Game 4,62,0,0.039,human,0.039
+Lee Sedol vs AlphaGo Game 4,64,1,0.037,human,0.037
+Lee Sedol vs AlphaGo Game 4,66,0,0.021,human,0.021
+Lee Sedol vs AlphaGo Game 4,68,3,0.029,human,0.029
+Lee Sedol vs AlphaGo Game 4,70,99,0.025,human,0.025
+Lee Sedol vs AlphaGo Game 4,72,5,0.025,human,0.025
+Lee Sedol vs AlphaGo Game 4,74,3,0.018,human,0.018
+Lee Sedol vs AlphaGo Game 4,76,0,0.016,human,0.016
+Lee Sedol vs AlphaGo Game 4,78,2,0.014,human,0.014
+Lee Sedol vs AlphaGo Game 4,80,1,0.044,human,0.044
+Lee Sedol vs AlphaGo Game 4,82,1,0.027,human,0.027
+Lee Sedol vs AlphaGo Game 4,84,6,0.032,human,0.032
+Lee Sedol vs AlphaGo Game 4,86,99,0.054,human,0.054
+Lee Sedol vs AlphaGo Game 4,88,0,0.068,human,0.068
+Lee Sedol vs AlphaGo Game 4,90,0,0.241,human,0.241
+Lee Sedol vs AlphaGo Game 4,92,0,0.293,human,0.293
+Lee Sedol vs AlphaGo Game 4,94,0,0.692,human,0.692
+Lee Sedol vs AlphaGo Game 4,96,1,0.636,human,0.636
+Lee Sedol vs AlphaGo Game 4,98,0,0.879,human,0.879
+Lee Sedol vs AlphaGo Game 4,100,0,0.855,human,0.855
+Lee Sedol vs AlphaGo Game 4,102,1,0.919,human,0.919
+Lee Sedol vs AlphaGo Game 4,104,0,0.932,human,0.932
+Lee Sedol vs AlphaGo Game 4,106,2,0.959,human,0.959
+Lee Sedol vs AlphaGo Game 4,108,0,0.938,human,0.938
+Lee Sedol vs AlphaGo Game 4,110,1,0.964,human,0.964
+Lee Sedol vs AlphaGo Game 4,112,1,0.967,human,0.967
+Lee Sedol vs AlphaGo Game 4,114,0,0.976,human,0.976
+Lee Sedol vs AlphaGo Game 4,116,3,0.977,human,0.977
+Lee Sedol vs AlphaGo Game 4,118,0,0.963,human,0.963
+Lee Sedol vs AlphaGo Game 4,120,5,0.972,human,0.972
+Lee Sedol vs AlphaGo Game 4,122,1,0.947,human,0.947
+Lee Sedol vs AlphaGo Game 4,124,0,0.976,human,0.976
+Lee Sedol vs AlphaGo Game 4,126,1,0.986,human,0.986
+Lee Sedol vs AlphaGo Game 4,128,0,0.984,human,0.984
+Lee Sedol vs AlphaGo Game 4,130,1,0.985,human,0.985
+Lee Sedol vs AlphaGo Game 4,132,2,0.988,human,0.988
+Lee Sedol vs AlphaGo Game 4,134,1,0.989,human,0.989
+Lee Sedol vs AlphaGo Game 4,136,0,0.992,human,0.992
+Lee Sedol vs AlphaGo Game 4,138,4,0.993,human,0.993
+Lee Sedol vs AlphaGo Game 4,140,0,0.989,human,0.989
+Lee Sedol vs AlphaGo Game 4,142,12,0.989,human,0.989
+Lee Sedol vs AlphaGo Game 4,144,1,0.995,human,0.995
+Lee Sedol vs AlphaGo Game 4,146,3,0.996,human,0.996
+Lee Sedol vs AlphaGo Game 4,148,1,0.996,human,0.996
+Lee Sedol vs AlphaGo Game 4,150,2,0.996,human,0.996
+Lee Sedol vs AlphaGo Game 4,152,0,0.994,human,0.994
+Lee Sedol vs AlphaGo Game 4,154,1,0.996,human,0.996
+Lee Sedol vs AlphaGo Game 4,156,0,0.995,human,0.995
+Lee Sedol vs AlphaGo Game 4,158,1,0.996,human,0.996
+Lee Sedol vs AlphaGo Game 4,160,2,0.996,human,0.996
+Ke Jie vs AlphaGo Master Game 1,16,0,0.434,alphago,0.5660000000000001
+Ke Jie vs AlphaGo Master Game 1,18,0,0.438,alphago,0.562
+Ke Jie vs AlphaGo Master Game 1,20,6,0.45,alphago,0.55
+Ke Jie vs AlphaGo Master Game 1,22,1,0.451,alphago,0.5489999999999999
+Ke Jie vs AlphaGo Master Game 1,24,0,0.427,alphago,0.573
+Ke Jie vs AlphaGo Master Game 1,26,3,0.433,alphago,0.567
+Ke Jie vs AlphaGo Master Game 1,28,0,0.445,alphago,0.5549999999999999
+Ke Jie vs AlphaGo Master Game 1,30,2,0.446,alphago,0.554
+Ke Jie vs AlphaGo Master Game 1,32,0,0.423,alphago,0.577
+Ke Jie vs AlphaGo Master Game 1,34,0,0.49,alphago,0.51
+Ke Jie vs AlphaGo Master Game 1,36,0,0.512,alphago,0.488
+Ke Jie vs AlphaGo Master Game 1,38,2,0.489,alphago,0.511
+Ke Jie vs AlphaGo Master Game 1,40,0,0.488,alphago,0.512
+Ke Jie vs AlphaGo Master Game 1,42,2,0.476,alphago,0.524
+Ke Jie vs AlphaGo Master Game 1,44,0,0.484,alphago,0.516
+Ke Jie vs AlphaGo Master Game 1,46,0,0.488,alphago,0.512
+Ke Jie vs AlphaGo Master Game 1,48,0,0.512,alphago,0.488
+Ke Jie vs AlphaGo Master Game 1,50,0,0.484,alphago,0.516
+Ke Jie vs AlphaGo Master Game 1,52,1,0.468,alphago,0.532
+Ke Jie vs AlphaGo Master Game 1,54,1,0.493,alphago,0.507
+Ke Jie vs AlphaGo Master Game 1,56,0,0.522,alphago,0.478
+Ke Jie vs AlphaGo Master Game 1,58,3,0.488,alphago,0.512
+Ke Jie vs AlphaGo Master Game 1,60,1,0.487,alphago,0.513
+Ke Jie vs AlphaGo Master Game 1,62,0,0.743,alphago,0.257
+Ke Jie vs AlphaGo Master Game 1,64,0,0.717,alphago,0.28300000000000003
+Ke Jie vs AlphaGo Master Game 1,66,0,0.758,alphago,0.242
+Ke Jie vs AlphaGo Master Game 1,68,1,0.753,alphago,0.247
+Ke Jie vs AlphaGo Master Game 1,70,0,0.787,alphago,0.21299999999999997
+Ke Jie vs AlphaGo Master Game 1,72,2,0.794,alphago,0.20599999999999996
+Ke Jie vs AlphaGo Master Game 1,74,3,0.811,alphago,0.18899999999999995
+Ke Jie vs AlphaGo Master Game 1,76,1,0.794,alphago,0.20599999999999996
+Ke Jie vs AlphaGo Master Game 1,78,8,0.799,alphago,0.20099999999999996
+Ke Jie vs AlphaGo Master Game 1,80,4,0.832,alphago,0.16800000000000004
+Ke Jie vs AlphaGo Master Game 1,82,0,0.824,alphago,0.17600000000000005
+Ke Jie vs AlphaGo Master Game 1,84,0,0.82,alphago,0.18000000000000005
+Ke Jie vs AlphaGo Master Game 1,86,0,0.835,alphago,0.16500000000000004
+Ke Jie vs AlphaGo Master Game 1,88,6,0.8,alphago,0.19999999999999996
+Ke Jie vs AlphaGo Master Game 1,90,0,0.816,alphago,0.18400000000000005
+Ke Jie vs AlphaGo Master Game 1,92,1,0.793,alphago,0.20699999999999996
+Ke Jie vs AlphaGo Master Game 1,94,0,0.808,alphago,0.19199999999999995
+Ke Jie vs AlphaGo Master Game 1,96,0,0.834,alphago,0.16600000000000004
+Ke Jie vs AlphaGo Master Game 1,98,0,0.827,alphago,0.17300000000000004
+Ke Jie vs AlphaGo Master Game 1,100,0,0.837,alphago,0.16300000000000003
+Ke Jie vs AlphaGo Master Game 1,102,9,0.838,alphago,0.16200000000000003
+Ke Jie vs AlphaGo Master Game 1,104,0,0.861,alphago,0.139
+Ke Jie vs AlphaGo Master Game 1,106,0,0.859,alphago,0.14100000000000001
+Ke Jie vs AlphaGo Master Game 1,108,0,0.893,alphago,0.10699999999999998
+Ke Jie vs AlphaGo Master Game 1,110,0,0.902,alphago,0.09799999999999998
+Ke Jie vs AlphaGo Master Game 1,112,5,0.925,alphago,0.07499999999999996
+Ke Jie vs AlphaGo Master Game 1,114,0,0.949,alphago,0.051000000000000045
+Ke Jie vs AlphaGo Master Game 1,116,0,0.936,alphago,0.06399999999999995
+Ke Jie vs AlphaGo Master Game 1,118,1,0.97,alphago,0.030000000000000027
+Ke Jie vs AlphaGo Master Game 1,120,0,0.958,alphago,0.04200000000000004
+Ke Jie vs AlphaGo Master Game 1,122,0,0.983,alphago,0.017000000000000015
+Ke Jie vs AlphaGo Master Game 1,124,1,0.983,alphago,0.017000000000000015
+Ke Jie vs AlphaGo Master Game 1,126,0,0.984,alphago,0.016000000000000014
+Ke Jie vs AlphaGo Master Game 1,128,0,0.985,alphago,0.015000000000000013
+Ke Jie vs AlphaGo Master Game 1,130,0,0.989,alphago,0.01100000000000001
+Ke Jie vs AlphaGo Master Game 1,132,0,0.991,alphago,0.009000000000000008
+Ke Jie vs AlphaGo Master Game 1,134,1,0.991,alphago,0.009000000000000008
+Ke Jie vs AlphaGo Master Game 1,136,1,0.993,alphago,0.007000000000000006
+Ke Jie vs AlphaGo Master Game 1,138,0,0.995,alphago,0.0050000000000000044
+Ke Jie vs AlphaGo Master Game 1,140,11,0.993,alphago,0.007000000000000006
+Ke Jie vs AlphaGo Master Game 1,142,14,0.995,alphago,0.0050000000000000044
+Ke Jie vs AlphaGo Master Game 1,144,0,0.997,alphago,0.0030000000000000027
+Ke Jie vs AlphaGo Master Game 1,146,0,0.996,alphago,0.0040000000000000036
+Ke Jie vs AlphaGo Master Game 1,148,0,0.997,alphago,0.0030000000000000027
+Ke Jie vs AlphaGo Master Game 1,150,10,0.997,alphago,0.0030000000000000027
+Ke Jie vs AlphaGo Master Game 1,152,0,0.998,alphago,0.0020000000000000018
+Ke Jie vs AlphaGo Master Game 1,154,0,0.997,alphago,0.0030000000000000027
